@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from 'emailjs-com';
-// import Footer3 from '../home/Footer4';
 import ReservationSeo from '../../seo/ReservationSeo';
 
 export default function FormulaireReservation() {
@@ -262,7 +261,6 @@ export default function FormulaireReservation() {
                     </div>
                 </form>
             </div>
-            {/* <Footer3 /> */}
         </div>
     );
 }

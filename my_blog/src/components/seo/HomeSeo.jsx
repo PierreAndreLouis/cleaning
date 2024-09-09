@@ -7,30 +7,30 @@ export default function HomeSeo() {
             {/* Helmet pour les balises SEO */}
             <Helmet>
                 {/* Titre de la page */}
-                <title>Accueil - Pierre-André Louis | Coaching Professionnel</title>
+                <title>Accueil - Services de Nettoyage Professionnels</title>
 
                 {/* Meta Description */}
                 <meta
                     name="description"
-                    content="Explorez nos services de coaching professionnel pour booster votre carrière. Pierre-André Louis vous accompagne dans votre développement personnel et professionnel avec des stratégies sur mesure."
+                    content="Découvrez nos services de nettoyage professionnels pour maintenir vos espaces impeccables. Profitez d'un service de qualité adapté à vos besoins résidentiels et commerciaux."
                 />
 
                 {/* Mots-clés SEO */}
-                <meta name="keywords" content="coaching professionnel, développement personnel, coaching de carrière, mentorat, gestion de carrière, coaching en ligne" />
+                <meta name="keywords" content="services de nettoyage, nettoyage résidentiel, nettoyage commercial, entretien ménager, nettoyage professionnel, services d'entretien" />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="Accueil - Pierre-André Louis | Coaching Professionnel" />
-                <meta property="og:description" content="Explorez nos services de coaching professionnel pour booster votre carrière." />
-                <meta property="og:image" content="https://mon-site.com/images/coaching-home-page.jpg" /> {/* Assure-toi de remplacer par une URL d'image appropriée */}
+                <meta property="og:title" content="Accueil - Services de Nettoyage Professionnels" />
+                <meta property="og:description" content="Découvrez nos services de nettoyage professionnels pour des espaces propres et accueillants. Contactez-nous pour un devis personnalisé." />
+                <meta property="og:image" content="https://mon-site.com/images/cleaning-home-page.jpg" /> {/* Remplace par une URL d'image appropriée */}
 
                 <meta property="og:url" content="https://mon-site.com" />
                 <meta property="og:type" content="website" />
 
                 {/* Twitter Card Tags */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Accueil - Pierre-André Louis | Coaching Professionnel" />
-                <meta name="twitter:description" content="Explorez nos services de coaching professionnel pour booster votre carrière." />
-                <meta name="twitter:image" content="https://mon-site.com/images/coaching-home-page.jpg" />
+                <meta name="twitter:title" content="Accueil - Services de Nettoyage Professionnels" />
+                <meta name="twitter:description" content="Maintenez vos espaces impeccables avec nos services de nettoyage professionnels. Contactez-nous pour un devis personnalisé." />
+                <meta name="twitter:image" content="https://mon-site.com/images/cleaning-home-page.jpg" />
 
                 {/* JSON-LD pour le SEO structuré */}
                 <script type="application/ld+json">
@@ -38,7 +38,7 @@ export default function HomeSeo() {
             {
               "@context": "http://schema.org",
               "@type": "WebSite",
-              "name": "Pierre-André Louis",
+              "name": "Services de Nettoyage Professionnels",
               "url": "https://mon-site.com",
               "potentialAction": {
                 "@type": "SearchAction",

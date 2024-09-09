@@ -7,46 +7,50 @@ export default function AboutSeo() {
             {/* Helmet pour les balises SEO */}
             <Helmet>
                 {/* Titre de la page */}
-                <title>À Propos - Pierre-André Louis | Coaching Professionnel</title>
+                <title>À Propos - Pierre-André Louis | Service de Nettoyage</title>
 
                 {/* Meta Description */}
                 <meta
                     name="description"
-                    content="En savoir plus sur Pierre-André Louis, coach professionnel dédié à aider les individus à atteindre leurs objectifs personnels et professionnels. Découvrez notre approche et notre engagement envers votre succès."
+                    content="Découvrez Pierre-André Louis et son service de nettoyage professionnel. Nous nous engageons à fournir un nettoyage impeccable pour des espaces résidentiels et commerciaux."
                 />
 
                 {/* Mots-clés SEO */}
-                <meta name="keywords" content="coaching professionnel, développement personnel, gestion de carrière, mentorat, coach, accompagnement professionnel, coaching en ligne" />
+                <meta name="keywords" content="service de nettoyage, nettoyage résidentiel, nettoyage commercial, entretien ménager, nettoyage professionnel, entreprise de nettoyage" />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="À Propos - Pierre-André Louis | Coaching Professionnel" />
-                <meta property="og:description" content="En savoir plus sur Pierre-André Louis, coach professionnel dédié à votre succès personnel et professionnel." />
-                <meta property="og:image" content="https://mon-site.com/images/about-page.jpg" /> {/* Remplace par une URL d'image appropriée */}
+                <meta property="og:title" content="À Propos - Pierre-André Louis | Service de Nettoyage" />
+                <meta property="og:description" content="En savoir plus sur Pierre-André Louis et notre engagement à offrir un service de nettoyage de qualité supérieure pour tous vos besoins." />
+                <meta property="og:image" content="https://mon-site.com/images/about-cleaning-service.jpg" /> {/* Remplace par une URL d'image appropriée */}
 
                 <meta property="og:url" content="https://mon-site.com/about" />
                 <meta property="og:type" content="website" />
 
                 {/* Twitter Card Tags */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="À Propos - Pierre-André Louis | Coaching Professionnel" />
-                <meta name="twitter:description" content="Découvrez l'approche et l'engagement de Pierre-André Louis pour vous aider à atteindre vos objectifs professionnels." />
-                <meta name="twitter:image" content="https://mon-site.com/images/about-page.jpg" />
+                <meta name="twitter:title" content="À Propos - Pierre-André Louis | Service de Nettoyage" />
+                <meta name="twitter:description" content="Découvrez notre service de nettoyage professionnel et comment Pierre-André Louis assure des espaces propres et impeccables." />
+                <meta name="twitter:image" content="https://mon-site.com/images/about-cleaning-service.jpg" />
 
                 {/* JSON-LD pour le SEO structuré */}
                 <script type="application/ld+json">
                     {`
             {
               "@context": "http://schema.org",
-              "@type": "Person",
-              "name": "Pierre-André Louis",
-              "jobTitle": "Coach Professionnel",
-              "url": "https://mon-site.com/about",
-              "image": "https://mon-site.com/images/about-page.jpg",
-              "description": "Pierre-André Louis est un coach professionnel spécialisé dans l'accompagnement des individus pour atteindre leurs objectifs personnels et professionnels.",
-              "sameAs": [
-                "https://www.linkedin.com/in/pierre-andre-louis",
-                "https://twitter.com/pierreandrelouis"
-              ]
+              "@type": "Service",
+              "serviceType": "Service de Nettoyage",
+              "provider": {
+                "@type": "Organization",
+                "name": "Pierre-André Louis",
+                "url": "https://mon-site.com",
+                "logo": "https://mon-site.com/images/about-cleaning-service.jpg",
+                "sameAs": [
+                  "https://www.linkedin.com/in/pierre-andre-louis",
+                  "https://twitter.com/pierreandrelouis"
+                ]
+              },
+              "description": "Service de nettoyage professionnel offrant des solutions de nettoyage pour espaces résidentiels et commerciaux.",
+              "url": "https://mon-site.com/about"
             }
           `}
                 </script>

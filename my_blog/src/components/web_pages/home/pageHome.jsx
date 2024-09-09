@@ -8,7 +8,6 @@ import Statistic1 from './Statistic1'
 import Pricing4 from './Pricing4'
 import CTA12 from './CTA12'
 import Testimonial5 from './Testimonial5'
-// import Footer5 from './Footer5'
 import Contact1 from './Contact1'
 import Gallery5 from './Gallery5'
 
@@ -26,7 +25,6 @@ export default function pageHome() {
       <CTA12 />
       <Testimonial5 />
       <Contact1 />
-      {/* <Footer5 /> */}
     </div>
   )
 }
