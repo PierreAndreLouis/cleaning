@@ -12,7 +12,7 @@ import Testimonial5 from './Testimonial5'
 import Contact1 from './Contact1'
 import Gallery5 from './Gallery5'
 
-export default function HomePage() {
+export default function pageHome() {
   return (
     <div>
       <Hero2 />
