@@ -27,9 +27,9 @@ const features = [
 
 const Service1 = () => {
   return (
-    <div className='bg-gray-100 dark:bg-gray-900 px-4 md:px-8 py-10'>
+    <div className='bg-gray-100 dark:bg-gray-900 px-4 md:px-8 py-20'>
       <div id="features" className="mx-auto max-w-6xl ">
-        <p className="text-center text-base font-semibold leading-7 text-primary-500 dark:text-gray-100 ">nos services</p>
+        <p className="text-center text-base font-semibold leading-7 text-primary-500 dark:text-gray-100 ">Nos services</p>
         <h2 className="text-center font-display text-3xl font-semibold tracking-tight text-yellow-400 dark:text-slate-100 md:text-4xl">
           Redonner vie à la fraîcheur
         </h2>
@@ -66,9 +66,9 @@ const Service1 = () => {
             // </li>
           ))}
         </div>
-        <div className='w-full flex justify-center'>
+        {/* <div className='w-full flex justify-center'>
           <button className='mt-10 mx-auto border bg-yellow-100 border-yellow-800 font-semibold py-2 px-10 rounded-xl text-slate-700'>Plus der service</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

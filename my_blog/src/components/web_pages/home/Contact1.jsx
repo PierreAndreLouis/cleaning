@@ -1,8 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
+
 
 export default function Contact1() {
+    const [loading, setLoading] = useState(false);
+
+
+    function sendMail(e) {
+        e.preventDefault(); // Empêche le rechargement de la page
+
+
+        const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+
+            message: document.getElementById("message").value,
+        };
+
+        if (Object.values(params).some(value => !value)) {
+            alert("Veuillez remplir tous les champs avant d'envoyer votre message.");
+            return;
+        }
+
+        setLoading(true); // Active le mode chargement
+
+        const serviceID = "service_29vmgsk";
+        const templateID = "template_jt4bvjk";
+
+        emailjs.init("Y4DfcLA5moa5C1k6K"); // Clé publique
+
+        emailjs.send(serviceID, templateID, params)
+            .then(res => {
+                // Réinitialise les champs du formulaire
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+
+                console.log(res);
+                alert("Votre message a été envoyé avec succès !");
+            })
+            .catch(err => {
+                console.log(err);
+                alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
+            })
+            .finally(() => {
+                setLoading(false); // Désactive le mode chargement après l'envoi
+            });
+    }
+
+
     return (
-        <div className="dark:bg-gray-900 dark:text-white bg-gray-100">
+        <div className="dark:bg-gray-900 px-2 dark:text-white bg-gray-100">
             <div className="container max-w-6xl py-12 mx-auto px-2 md:px-4">
 
                 <section className="mb-32">
@@ -17,31 +65,41 @@ export default function Contact1() {
 
                     <div className="flex flex-wrap">
 
-                        <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                        <form
+                            
+                            className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                             <div className="mb-3 w-full">
                                 <label className="block font-medium mb-[2px] text-yellow-400 dark:text-yellow-300" htmlFor="exampleInput90">
                                     Name
                                 </label>
-                                <input type="text" className="px-2 py-2 border w-full outline-none rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-white" id="exampleInput90" placeholder="Name" />
+                                <input type="text" className="px-2 py-2 border w-full outline-none rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                                    id="name" placeholder="Name" />
                             </div>
 
                             <div className="mb-3 w-full">
                                 <label className="block font-medium mb-[2px] text-yellow-400 dark:text-yellow-300" htmlFor="exampleInput90">
                                     Email
                                 </label>
-                                <input type="email" className="px-2 py-2 border w-full outline-none rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-white" id="exampleInput90" placeholder="Enter your email address" />
+                                <input type="email"
+                                    className="px-2 py-2 border w-full outline-none rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                                    id="email" placeholder="Enter your email address" />
                             </div>
 
                             <div className="mb-3 w-full">
                                 <label className="block font-medium mb-[2px] text-yellow-400 dark:text-yellow-300" htmlFor="exampleInput90">
                                     Message
                                 </label>
-                                <textarea className="px-2 py-2 border rounded-[5px] w-full outline-none dark:border-gray-700 dark:bg-gray-800 dark:text-white"></textarea>
+                                <textarea
+                                    id="message"
+                                    className="px-2 py-2 border rounded-[5px] w-full outline-none dark:border-gray-700 dark:bg-gray-800 dark:text-white"/>
                             </div>
 
-                            <button type="button"
+                            <button
+                                disabled={loading}
+                                onClick={(e) => { sendMail(e) }}
+                                type="submit"
                                 className="mb-6 inline-block w-full rounded bg-yellow-400 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-yellow-500 dark:bg-yellow-600 dark:hover:bg-yellow-400">
-                                Send
+                                {loading ? 'Envoi en cours...' : 'Rendez-vous'}
                             </button>
 
                         </form>

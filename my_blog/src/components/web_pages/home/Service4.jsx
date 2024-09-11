@@ -102,7 +102,7 @@ const features = [
 
 const Service4 = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 text-slate-900 dark:text-slate-200 py-10">
+    <section className="bg-white dark:bg-gray-900 text-slate-900 dark:text-slate-200 py-20">
       <div className="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl text-yellow-400  dark:text-gray-300 font-semibold text-center sm:text-3xl">Ce que vous recevrez de nous</h2>
@@ -121,8 +121,8 @@ const Service4 = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-bold text-slate-700">{feature.title}</h4>
-                    <p className="mt-2 text-slate-600">{feature.description}</p>
+                    <h4 className="text-lg font-bold text-slate-700 dark:text-white">{feature.title}</h4>
+                    <p className="mt-2 text-slate-600 dark:text-gray-400">{feature.description}</p>
                   </div>
                 </div>
               ))}

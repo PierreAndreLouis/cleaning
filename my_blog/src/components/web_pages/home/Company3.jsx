@@ -3,9 +3,9 @@ import React from 'react'
 export default function Company3() {
   return (
       <div>
-          <section class="bg-slate-100  w-full flex justify-center items-center dark:bg-gray-800 p-8 py-14">
-              <div class="max-w-screen-xl px-4  mx-auto  flex justify-center items-center">
-                  <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 ">
+          <section class="bg-slate-100  w-full flex justify-center items-center dark:bg-gray-800 md:p-8 py-14">
+              <div class="max-w-6xl   px-4  mx-auto  flex justify-center items-center">
+                  <div class="grid grid-cols-3 gap-6  w-full md:gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 ">
                       <a class="flex items-center lg:justify-center" target="_blank">
                           <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor"
                               xmlns="http://www.w3.org/2000/svg">
