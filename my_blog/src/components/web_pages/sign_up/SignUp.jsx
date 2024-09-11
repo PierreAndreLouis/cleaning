@@ -48,7 +48,7 @@ export default function SignUp() {
         {/* Gauche */}
         <div className='flex-1'>
           <Link to='/' className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 text-sky-500 rounded-lg'>
+            <span className='px-2 py-1 text-yellow-400 rounded-lg'>
               Pedro's
             </span>
             Blog
@@ -89,7 +89,7 @@ export default function SignUp() {
               />
             </div>
             <button
-              className='py-2 mt-6 rounded-md bg-sky-500 border-2 border-sky-500 text-white'
+              className='py-2 mt-6 rounded-md bg-yellow-400 border-2 border-yellow-400 text-white'
               type='submit'
               disabled={loading}
             >
